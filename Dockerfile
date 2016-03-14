@@ -29,3 +29,6 @@ ENV PATH /usr/bin:$PATH
 
 # Print Installed Swift Version
 RUN swift --version
+
+# Allow non-root UID
+RUN chmod -R a+rx /usr/lib/swift
